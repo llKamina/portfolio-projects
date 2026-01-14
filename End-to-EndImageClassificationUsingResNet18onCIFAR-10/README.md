@@ -74,34 +74,34 @@ model.fc = nn.Linear(model.fc.in_features, 10)
 ```
 
 ### 🔁 Training Pipeline
-Optimizer: AdamW (lr = 1e-4)
+- **Optimizer: AdamW (lr = 1e-4)**
 
-Loss function: CrossEntropyLoss
+- **Loss function: CrossEntropyLoss**
 
-Scheduler: StepLR (step_size=5, gamma=0.5)
+- **Scheduler: StepLR (step_size=5, gamma=0.5)**
 
-Epochs: 10
+- **Epochs: 10**
 
-Batch size: 32
+- **Batch size: 32**
 
-Data Augmentation:
+- **Data Augmentation:**
 
-    Random Horizontal Flip
+    - **Random Horizontal Flip**
 
-    Random Crop
+    - **Random Crop**
 
-    Normalization
+    - **Normalization**
 
 ### 📊 Evaluation Metrics
 During evaluation, the following metrics are computed:
 
-Accuracy
+- **Accuracy**
 
-Precision (weighted)
+- **Precision (weighted)**
 
-Recall (weighted)
+- **Recall (weighted)**
 
-F1-score (weighted)
+- **F1-score (weighted)**
 
 A confusion matrix is also generated to visualize classification errors.
 
@@ -110,9 +110,9 @@ A confusion matrix is also generated to visualize classification errors.
 Histogram of CIFAR-10 training labels.
 
 ### ✔ Training Curves
-Loss per epoch
+- **Loss per epoch**
 
-Validation accuracy curve
+- **Validation accuracy curve**
 
 ### ✔ Confusion Matrix
 Heatmap displaying predictions vs. true labels.
@@ -120,13 +120,13 @@ Heatmap displaying predictions vs. true labels.
 ### 🏁 Final Performance (Example Output)
 Performance depends on hardware and randomness, but ResNet18 typically achieves:
 
-Accuracy: ~90%
+- **Accuracy: ~90%**
 
-Precision: ~90%
+- **Precision: ~90%**
 
-Recall: ~90%
+- **Recall: ~90%**
 
-F1-score: ~90%
+- **F1-score: ~90%**
 
 This shows that the model successfully learns all CIFAR-10 classes with high accuracy.
 
