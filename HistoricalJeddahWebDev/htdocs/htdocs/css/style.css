@@ -1,0 +1,760 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*--------------------------*/
+/* Logo styling */
+#logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Navigation */
+nav {
+    background-color: #4a6d4c;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+span {
+    color: red;
+}
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;           
+    justify-content: left;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.nav-menu li {
+    margin: 0;
+    position: relative;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+
+.nav-menu a.active {
+    background-color: #666;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3d5c3c;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: #5a8759;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+/* Main content */
+.hero-section {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+}
+
+.page-header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.content-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Lists */
+ul {
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Images */
+.page-image {
+    width: 300px;
+    height: 200px;
+    margin-top: 40px;
+    border: 2px solid #ddd;
+}
+
+.image-left {
+    float: left;
+    margin-right: 15px;
+}
+
+.image-right {
+    float: right;
+    margin-left: 15px;
+}
+
+.image-center {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Simple sections */
+.about-section {
+    margin-bottom: 30px;
+}
+
+.benefits-section {
+    margin-bottom: 30px;
+}
+
+.benefit-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.service-item {
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2196F3;
+}
+
+.attraction-item {
+    background-color: #fff9c4;
+    padding: 30px;
+    padding-bottom: 60px;
+    margin-bottom: 25px;
+    border-left: 4px solid #ff9800;
+}
+
+.restaurant-item {
+    background-color: #e8f5e8;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #4CAF50;
+}
+
+.event-item {
+    background-color: #f3e5f5;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #9c27b0;
+}
+
+/* Contact section */
+.contact-section {
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+/* Blockquotes */
+blockquote {
+    background-color: #f9f9f9;
+    border-left: 4px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Links */
+a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Gallery Styles */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-thumb {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-thumb:hover {
+    transform: scale(1.05);
+    border-color: #4CAF50;
+}
+
+#imageViewer.viewer-hidden {
+    display: none;
+}
+
+#imageViewer.viewer-visible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#viewerImage {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+.closeViewer {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.closeViewer:hover {
+    color: #ff4444;
+}
+
+.large-image-box {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#largeImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.thumb-strip {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.thumb {
+    width: 110px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.thumb:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.active-thumb {
+    border: 3px solid #ff6b5a;
+    opacity: 1;
+    box-shadow: 0 0 5px #ff6b5a;
+}
+
+.gallery-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.gallery-buttons button {
+    background: #54a9ff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.2s;
+}
+
+.gallery-buttons button:hover {
+    background: #1a85ff;
+}
+
+/* Video Styles */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.pdf-viewer {
+    width: 100%;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    /* Force proper viewport scaling */
+    html {
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+    }
+    
+    body {
+        min-height: 100vh;
+    }
+
+    /* Navigation - 2 rows on mobile */
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #logo {
+        width: 150px;
+        margin: 5px auto;
+        display: block;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        flex: 0 0 auto;
+    }
+
+    .nav-menu a, .dropbtn {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    /* Hero section - larger for scrolling */
+    .hero-section {
+        padding: 60px 20px;
+        min-height: 40vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .page-header {
+        padding: 50px 20px;
+        min-height: 30vh;
+    }
+    
+    .page-header h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+    
+    /* Content container - proper spacing */
+    .content-container {
+        width: 95%;
+        padding: 20px 15px;
+        margin: 15px auto;
+        min-height: 60vh;
+    }
+    
+    /* Headings - larger for readability */
+    h2 {
+        font-size: 22px;
+        margin-bottom: 18px;
+        line-height: 1.3;
+    }
+    
+    h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+        line-height: 1.4;
+    }
+    
+    /* Paragraphs - better line height */
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+    
+    /* Lists - better spacing */
+    ul {
+        padding-left: 25px;
+        margin-bottom: 18px;
+    }
+    
+    li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+        font-size: 15px;
+    }
+    
+    /* Images - responsive */
+    .page-image {
+        width: 100% !important;
+        height: auto !important;
+        float: none !important;
+        margin: 15px 0;
+        max-width: 100%;
+    }
+    
+    .image-left, .image-right {
+        float: none !important;
+        margin: 15px auto;
+        display: block;
+    }
+    
+    /* Section items - better spacing */
+    .benefit-item,
+    .service-item,
+    .attraction-item,
+    .restaurant-item,
+    .event-item {
+        padding: 18px 15px;
+        margin-bottom: 18px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    
+    /* Contact section */
+    .contact-section {
+        margin-bottom: 25px;
+    }
+    
+    .contact-details {
+        padding: 18px 15px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    
+    /* Blockquotes */
+    blockquote {
+        padding: 18px 15px;
+        margin: 18px 0;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    
+    /* Gallery - mobile optimized */
+    .gallery-container {
+        gap: 10px;
+        padding: 10px 5px;
+    }
+    
+    .gallery-thumb {
+        width: calc(50% - 10px);
+        height: 120px;
+        max-width: 180px;
+    }
+    
+    .large-image-box {
+        width: 95%;
+        padding: 10px;
+        margin: 15px auto;
+    }
+    
+    .thumb-strip {
+        gap: 8px;
+        padding: 8px 5px;
+    }
+    
+    .thumb {
+        width: 70px;
+        height: 50px;
+        min-width: 70px;
+    }
+    
+    .gallery-buttons button {
+        padding: 10px 18px;
+        font-size: 15px;
+        margin: 5px;
+    }
+    
+    /* Video container */
+    .video-container {
+        margin-top: 15px;
+        border-radius: 8px;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 25px 15px;
+        font-size: 14px;
+    }
+    
+    /* Mobile dropdown adjustments */
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        display: none;
+        width: 100%;
+        margin-top: 5px;
+        background-color: #3d5c3c;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .pdf-viewer {
+    width: 100%;
+	}
+}
+
+/* Table styling */
+#schedule-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Border to replace border="1" */
+#schedule-table,
+#schedule-table th,
+#schedule-table td {
+    border: 1px solid #000;
+}
+
+/* Replace cellpadding="8" */
+#schedule-table th,
+#schedule-table td {
+    padding: 8px;
+}
+
+/* Optional: styling improvements */
+#schedule-table caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/* Very small screens (phones in portrait) */
+@media (max-width: 480px) {
+    #logo {
+        width: 120px;
+    }
+    
+    .nav-menu a, .dropbtn {
+        padding: 7px 8px;
+        font-size: 13px;
+    }
+    
+    .hero-section h1 {
+        font-size: 24px;
+    }
+    
+    .hero-subtitle {
+        font-size: 15px;
+    }
+    
+    .page-header h1 {
+        font-size: 22px;
+    }
+    
+    .pdf-viewer {
+    width: 100%;
+	}
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 17px;
+    }
+    
+    .gallery-thumb {
+        width: calc(50% - 8px);
+        height: 100px;
+    }
+}
