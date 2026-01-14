@@ -75,21 +75,34 @@ model.fc = nn.Linear(model.fc.in_features, 10)
 
 ### 🔁 Training Pipeline
 Optimizer: AdamW (lr = 1e-4)
+
 Loss function: CrossEntropyLoss
+
 Scheduler: StepLR (step_size=5, gamma=0.5)
+
 Epochs: 10
+
 Batch size: 32
+
 Data Augmentation:
-Random Horizontal Flip
-Random Crop
-Normalization
+
+    Random Horizontal Flip
+
+    Random Crop
+
+    Normalization
 
 ### 📊 Evaluation Metrics
 During evaluation, the following metrics are computed:
+
 Accuracy
+
 Precision (weighted)
+
 Recall (weighted)
+
 F1-score (weighted)
+
 A confusion matrix is also generated to visualize classification errors.
 
 ### 📈 Visualizations
@@ -98,6 +111,7 @@ Histogram of CIFAR-10 training labels.
 
 ### ✔ Training Curves
 Loss per epoch
+
 Validation accuracy curve
 
 ### ✔ Confusion Matrix
@@ -105,19 +119,27 @@ Heatmap displaying predictions vs. true labels.
 
 ### 🏁 Final Performance (Example Output)
 Performance depends on hardware and randomness, but ResNet18 typically achieves:
+
 Accuracy: ~90%
+
 Precision: ~90%
+
 Recall: ~90%
+
 F1-score: ~90%
+
 This shows that the model successfully learns all CIFAR-10 classes with high accuracy.
 
 ### 📁 Project Structure
 Project405.py         # Full training/evaluation pipeline
+
 /data                 # CIFAR-10 dataset (auto-downloaded)
 
 ### ▶ How to Run
 Install dependencies:
+
 pip install torch torchvision matplotlib seaborn scikit-learn
 
 Run the script:
+
 python Project405.py
