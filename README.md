@@ -22,7 +22,13 @@ I enjoy building efficient systems, exploring high-performance computing, and so
 
 Below is a shortlist of the projects included in this portfolio.  
 
+**Automated HPC Node Setup (Bash + Linux)** Developed a fully automated Bash script to provision HPC compute nodes, including hostname configuration, NFS shared storage mounting, user synchronization, SSH setup, and PBS Professional MOM integration.
 
+**End-to-End Image Classification Using ResNet18** Built a deep learning pipeline using PyTorch to classify CIFAR-10 images by adapting ResNet18 for small images, applying data augmentation, and evaluating performance using accuracy, F1-score, confusion matrix, and training curves.
+
+**Arabic Text Classification Using Naive Bayes** Implemented an Arabic text classification system to categorize news articles into Economy and Sports using TF-IDF feature extraction, Naive Bayes modeling, custom HTML text extraction, and automated CSV prediction output.
+
+**Explore Jeddah – Tourism Guide Website** Designed and developed a responsive tourism website showcasing Jeddah’s landmarks and attractions using HTML, CSS, and PHP with modular structure and clean UI/UX design.
 
 ---
 
